@@ -97,14 +97,30 @@
   }
 }
 
-.heroButton {
-  @apply --marketplaceButtonStyles;
+.heroButtonPrimary {
+  @apply --marketplaceButtonStylesPrimary;
   @apply --SectionHero_animation;
 
   animation-delay: 0.8s;
 
   @media (--viewportMedium) {
     display: block;
+    display: inline-block;
+    margin: 10px;
+    width: 260px;
+  }
+}
+
+.heroButtonSecondary {
+  @apply --marketplaceButtonStylesSecondary;
+  @apply --SectionHero_animation;
+
+  animation-delay: 0.8s;
+
+  @media (--viewportMedium) {
+    display: block;
+    display: inline-block;
+    margin: 10px;
     width: 260px;
   }
 }
